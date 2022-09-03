@@ -61,6 +61,7 @@ const Page = () => {
 						<Button
 							rightIcon={<ChevronRightIcon />}
 							colorScheme={useColorModeValue('dayBlue', 'nightPink')}
+							color={useColorModeValue('dayBG', 'nightBG')}
 						>
 							My Resume
 						</Button>
