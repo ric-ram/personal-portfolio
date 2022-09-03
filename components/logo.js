@@ -12,6 +12,16 @@ const LogoBox = styled.span`
   height: 30px;
   line-height: 20px;
   padding: 10px;
+
+  .blink {
+    animation: blinker 1.5s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 `
 
 const Logo = () => {
@@ -24,9 +34,15 @@ const Logo = () => {
     <Link href='/'>
       <a>
         <LogoBox>
-          <Image src={cursorImg} width={20} height={20} alt='logo' />
+          <Image
+            src={cursorImg}
+            width={20}
+            height={20}
+            alt='logo'
+            className='blink'
+          />
           <Text
-            color={useColorModeValue('black', 'whiteAlpha.900')}
+            color={useColorModeValue('black', 'greyishBlue')}
             fontFamily='"Montserrat"'
             fontWeight='bold'
             ml={3}

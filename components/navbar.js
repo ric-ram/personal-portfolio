@@ -20,7 +20,7 @@ import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, target, children }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('black', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('black', 'greyishBlue')
   return (
     <NextLink href={href}>
       <Link
@@ -43,7 +43,7 @@ const Navbar = props => {
       position='fixed'
       as='nav'
       w='100%'
-      bg={useColorModeValue('#fffffff40', '#20202380')}
+      bg={useColorModeValue('#F4EDE4', '#101015')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
