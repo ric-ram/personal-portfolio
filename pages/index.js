@@ -1,13 +1,17 @@
+import { ArrowForwardIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import {
 	Box,
-	Button,
 	Container,
 	Heading,
 	Image,
-	useColorModeValue
+	Link
 } from '@chakra-ui/react'
+import {
+	LeftThumbnailCard,
+	RightThumbnailCard
+} from '../components/cards'
 
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import MainButton from '../components/button'
 import NextLink from 'next/link'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
@@ -56,23 +60,58 @@ const Page = () => {
 					augue. Vestibulum auctor ornare leo, non suscipit magna
 					interdum eu.{' '}
 				</Paragraph>
-				<Box align='right' my={4}>
-					<NextLink href='/resume' passHref scroll={false}>
-						<Button
-							rightIcon={<ChevronRightIcon />}
-							colorScheme={useColorModeValue('dayBlue', 'nightPink')}
-							color={useColorModeValue('dayBG', 'nightBG')}
-						>
-							My Resume
-						</Button>
-					</NextLink>
-				</Box>
+				<MainButton icon={<ChevronRightIcon />}>My Resume</MainButton>
 			</Section>
 
 			<Section delay={0.1}>
 				<Heading as='h3' variant='section-title'>
 					Case Studies
 				</Heading>
+				<LeftThumbnailCard
+					thumbnail='/images/thumbnail-placeholder.png'
+					id='1'
+					title='Project Name'
+					position='right'
+				>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+					et massa mi. Aliquam in hendrerit urna.{' '}
+					<NextLink href='/projects/1' passHref scroll={false}>
+						<Link>
+							Read more <ArrowForwardIcon />
+						</Link>
+					</NextLink>
+				</LeftThumbnailCard>
+				<RightThumbnailCard
+					thumbnail='/images/thumbnail-placeholder.png'
+					id='1'
+					title='Project Name'
+					position='right'
+				>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+					et massa mi. Aliquam in hendrerit urna.{' '}
+					<NextLink href='/projects/1' passHref scroll={false}>
+						<Link>
+							Read more <ArrowForwardIcon />
+						</Link>
+					</NextLink>
+				</RightThumbnailCard>
+				<LeftThumbnailCard
+					thumbnail='/images/thumbnail-placeholder.png'
+					id='1'
+					title='Project Name'
+					position='right'
+				>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+					et massa mi. Aliquam in hendrerit urna.{' '}
+					<NextLink href='/projects/1' passHref scroll={false}>
+						<Link>
+							Read more <ArrowForwardIcon />
+						</Link>
+					</NextLink>
+				</LeftThumbnailCard>
+				<MainButton icon={<ChevronRightIcon />}>
+					My Portfolio
+				</MainButton>
 			</Section>
 		</Container>
 	)
