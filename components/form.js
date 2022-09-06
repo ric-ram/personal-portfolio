@@ -42,7 +42,7 @@ const ContactForm = () => (
 			</FormControl>
 			<FormControl isRequired>
 				<FormLabel>Message</FormLabel>
-				<Textarea placeholder='Message' resize='vertical' />
+				<Textarea placeholder='Message' resize='none' />
 			</FormControl>
 		</Box>
 		<MainButton icon={<RiSendPlaneFill />} href=''>
