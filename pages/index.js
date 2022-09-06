@@ -18,7 +18,6 @@ import {
 import { MainButton, SocialButton } from '../components/button'
 
 import ContactForm from '../components/form'
-import Footer from '../components/footer'
 import NextLink from 'next/link'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
@@ -146,7 +145,6 @@ const Page = () => {
 				</Box>
 				<ContactForm />
 			</Section>
-			<Footer />
 		</Container>
 	)
 }
