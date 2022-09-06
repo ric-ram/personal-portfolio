@@ -7,11 +7,18 @@ import {
 	Link
 } from '@chakra-ui/react'
 import {
+	IoLogoGithub,
+	IoLogoInstagram,
+	IoLogoLinkedin
+} from 'react-icons/io5'
+import {
 	LeftThumbnailCard,
 	RightThumbnailCard
 } from '../components/cards'
+import { MainButton, SocialButton } from '../components/button'
 
-import MainButton from '../components/button'
+import ContactForm from '../components/form'
+import Footer from '../components/footer'
 import NextLink from 'next/link'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
@@ -60,7 +67,9 @@ const Page = () => {
 					augue. Vestibulum auctor ornare leo, non suscipit magna
 					interdum eu.{' '}
 				</Paragraph>
-				<MainButton icon={<ChevronRightIcon />}>My Resume</MainButton>
+				<MainButton icon={<ChevronRightIcon />} href='/resume'>
+					My Resume
+				</MainButton>
 			</Section>
 
 			<Section delay={0.1}>
@@ -109,10 +118,35 @@ const Page = () => {
 						</Link>
 					</NextLink>
 				</LeftThumbnailCard>
-				<MainButton icon={<ChevronRightIcon />}>
+				<MainButton icon={<ChevronRightIcon />} href='/portfolio'>
 					My Portfolio
 				</MainButton>
 			</Section>
+
+			<Section delay={0.1}>
+				<Heading as='h3' variant='section-title'>
+					Contact me
+				</Heading>
+				<Box display='flex' gap='24px' mb={4}>
+					<SocialButton
+						icon={<IoLogoGithub size={24} />}
+						label='Github'
+						href=''
+					/>
+					<SocialButton
+						icon={<IoLogoLinkedin size={24} />}
+						label='LinkedIn'
+						href=''
+					/>
+					<SocialButton
+						icon={<IoLogoInstagram size={24} />}
+						label='Instagram'
+						href=''
+					/>
+				</Box>
+				<ContactForm />
+			</Section>
+			<Footer />
 		</Container>
 	)
 }

@@ -1,10 +1,16 @@
-import { Box, Button, useColorModeValue } from '@chakra-ui/react'
+import {
+	Box,
+	Button,
+	IconButton,
+	Link,
+	useColorModeValue
+} from '@chakra-ui/react'
 
 import NextLink from 'next/link'
 
-const MainButton = ({ children, icon }) => (
+const MainButton = ({ children, icon, href }) => (
 	<Box align='right' my={4}>
-		<NextLink href='/resume' passHref scroll={false}>
+		<NextLink href={href} passHref scroll={false}>
 			<Button
 				rightIcon={icon}
 				colorScheme={useColorModeValue('dayBlue', 'nightPink')}
@@ -16,4 +22,21 @@ const MainButton = ({ children, icon }) => (
 	</Box>
 )
 
-export default MainButton
+const SocialButton = ({ label, icon, href }) => (
+	<Link href={href} target='_blank'>
+		<IconButton
+			variant='link'
+			color={useColorModeValue('black', 'greyishBlue.200')}
+			_hover={{ color: useColorModeValue('linkBlue', 'linkPink') }}
+			aria-label={label}
+			size='xs'
+			justify-content='start'
+			icon={icon}
+		/>
+	</Link>
+)
+
+module.exports = {
+	MainButton: MainButton,
+	SocialButton: SocialButton
+}
