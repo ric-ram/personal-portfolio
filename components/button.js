@@ -22,6 +22,21 @@ const MainButton = ({ children, icon, href }) => (
 	</Box>
 )
 
+const DownloadButton = ({ children, icon, href, size }) => (
+	<Box align='right'>
+		<NextLink href={href} passHref scroll={false}>
+			<Button
+				rightIcon={icon}
+				colorScheme={useColorModeValue('dayBlue', 'nightPink')}
+				color={useColorModeValue('dayBG', 'nightBG')}
+				size={size}
+			>
+				{children}
+			</Button>
+		</NextLink>
+	</Box>
+)
+
 const SocialButton = ({ label, icon, href }) => (
 	<Link href={href} target='_blank'>
 		<IconButton
@@ -38,5 +53,6 @@ const SocialButton = ({ label, icon, href }) => (
 
 module.exports = {
 	MainButton: MainButton,
-	SocialButton: SocialButton
+	SocialButton: SocialButton,
+	DownloadButton: DownloadButton
 }

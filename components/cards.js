@@ -113,3 +113,18 @@ export const RightThumbnailCard = ({
 		</Box>
 	)
 }
+
+export const TechCard = ({ children }) => (
+	<Box
+		border={useColorModeValue(
+			'1px solid #000000',
+			'1px solid #a9b3d5'
+		)}
+		borderRadius='5px'
+		padding={{ md: '0.5em 1em', sm: '0.2em 0.5em' }}
+		alignItems='center'
+		fontSize='0.9em'
+	>
+		{children}
+	</Box>
+)

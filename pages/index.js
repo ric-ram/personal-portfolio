@@ -29,7 +29,7 @@ const Page = () => {
 				display={{ sm: 'flex' }}
 				mt={{ base: 6 }}
 				mb={{ base: 4 }}
-				align-items='center'
+				alignItems={{ base: 'center' }}
 			>
 				<Box flexGrow={1}>
 					<Heading as='h2' variant='page-title'>
@@ -71,7 +71,7 @@ const Page = () => {
 				</MainButton>
 			</Section>
 
-			<Section delay={0.1}>
+			<Section delay={0.4}>
 				<Heading as='h3' variant='section-title'>
 					Case Studies
 				</Heading>
@@ -122,7 +122,7 @@ const Page = () => {
 				</MainButton>
 			</Section>
 
-			<Section delay={0.1}>
+			<Section delay={0.7}>
 				<Heading as='h3' variant='section-title'>
 					Contact me
 				</Heading>
