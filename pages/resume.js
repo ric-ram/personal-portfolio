@@ -185,7 +185,7 @@ const Resume = () => {
 				<Heading as='h3' variant='section-title'>
 					Projects & Accomplishments
 				</Heading>
-				<ProjectList href='pomodoro'>
+				<ProjectList id='pomodoro'>
 					Built a pomodoro app with project management functionalities
 				</ProjectList>
 			</Section>
