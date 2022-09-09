@@ -79,7 +79,6 @@ const Page = () => {
 					thumbnail='/images/thumbnail-placeholder.png'
 					id='1'
 					title='Project Name'
-					position='right'
 				>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
 					et massa mi. Aliquam in hendrerit urna.{' '}
@@ -93,7 +92,6 @@ const Page = () => {
 					thumbnail='/images/thumbnail-placeholder.png'
 					id='1'
 					title='Project Name'
-					position='right'
 				>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
 					et massa mi. Aliquam in hendrerit urna.{' '}
@@ -107,7 +105,6 @@ const Page = () => {
 					thumbnail='/images/thumbnail-placeholder.png'
 					id='1'
 					title='Project Name'
-					position='right'
 				>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
 					et massa mi. Aliquam in hendrerit urna.{' '}

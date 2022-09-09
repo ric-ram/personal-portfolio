@@ -45,7 +45,7 @@ const SocialButton = ({ label, icon, href }) => (
 			_hover={{ color: useColorModeValue('linkBlue', 'linkPink') }}
 			aria-label={label}
 			size='xs'
-			justify-content='start'
+			justify-content='center'
 			icon={icon}
 		/>
 	</Link>

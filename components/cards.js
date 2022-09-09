@@ -1,5 +1,6 @@
 import {
 	Box,
+	Divider,
 	Grid,
 	GridItem,
 	Heading,
@@ -10,7 +11,10 @@ import {
 	useColorModeValue
 } from '@chakra-ui/react'
 
+import { AiOutlineGlobal } from 'react-icons/ai'
+import { IoLogoGithub } from 'react-icons/io5'
 import NextLink from 'next/link'
+import { SocialButton } from '../components/button'
 
 //import Image from 'next/image'
 
@@ -114,6 +118,34 @@ export const RightThumbnailCard = ({
 	)
 }
 
+const LinksGrid = ({ hrefWeb, hrefGit }) => {
+	return (
+		<Box
+			display='flex'
+			gap={6}
+			height='35px'
+			justifyContent='center'
+			mt={4}
+		>
+			<SocialButton
+				icon={<AiOutlineGlobal size={35} />}
+				label='website'
+				href={hrefWeb}
+			/>
+			<Divider
+				height='35px'
+				orientation='vertical'
+				borderColor={useColorModeValue('black', 'greyishBlue')}
+			/>
+			<SocialButton
+				icon={<IoLogoGithub size={35} />}
+				label='github'
+				href={hrefGit}
+			/>
+		</Box>
+	)
+}
+
 export const TechCard = ({ children }) => (
 	<Box
 		border={useColorModeValue(
@@ -128,3 +160,33 @@ export const TechCard = ({ children }) => (
 		{children}
 	</Box>
 )
+
+export const VerticalCard = ({ children, id, title, thumbnail }) => {
+	return (
+		<Box w='100%' mb={4} borderRadius='10px' textAlign='center'>
+			<NextLink href={`/projects/${id}`} passHref scroll={false}>
+				<LinkBox cursor='pointer'>
+					<Image
+						src={thumbnail}
+						alt={title}
+						loading='lazy'
+						borderRadius='15px'
+						w='100%'
+						mb={3}
+					/>
+					<LinkOverlay
+						href={`/projects/${id}`}
+						target='_blank'
+						mb={3}
+					>
+						<Heading as='h4' variant='project-title' mb={2}>
+							{title}
+						</Heading>
+					</LinkOverlay>
+					<Text fontSize={{ md: 16, sm: 14 }}>{children}</Text>
+					<LinksGrid hrefWeb='' hrefGit='' />
+				</LinkBox>
+			</NextLink>
+		</Box>
+	)
+}
