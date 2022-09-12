@@ -66,7 +66,11 @@ const Page = () => {
 					augue. Vestibulum auctor ornare leo, non suscipit magna
 					interdum eu.{' '}
 				</Paragraph>
-				<MainButton icon={<ChevronRightIcon />} href='/resume'>
+				<MainButton
+					icon={<ChevronRightIcon />}
+					href='/resume'
+					align='right'
+				>
 					My Resume
 				</MainButton>
 			</Section>
@@ -114,7 +118,11 @@ const Page = () => {
 						</Link>
 					</NextLink>
 				</LeftThumbnailCard>
-				<MainButton icon={<ChevronRightIcon />} href='/portfolio'>
+				<MainButton
+					icon={<ChevronRightIcon />}
+					href='/portfolio'
+					align='right'
+				>
 					My Portfolio
 				</MainButton>
 			</Section>

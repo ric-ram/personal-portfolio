@@ -45,7 +45,7 @@ const ContactForm = () => (
 				<Textarea placeholder='Message' resize='none' />
 			</FormControl>
 		</Box>
-		<MainButton icon={<RiSendPlaneFill />} href=''>
+		<MainButton icon={<RiSendPlaneFill />} href='' align='right'>
 			Send
 		</MainButton>
 	</form>

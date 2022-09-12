@@ -8,8 +8,8 @@ import {
 
 import NextLink from 'next/link'
 
-const MainButton = ({ children, icon, href }) => (
-	<Box align='right' my={4}>
+const MainButton = ({ children, icon, href, align }) => (
+	<Box align={align} my={4}>
 		<NextLink href={href} passHref scroll={false}>
 			<Button
 				rightIcon={icon}
