@@ -15,11 +15,14 @@ const Portfolio = () => {
 						<Section>
 							<VerticalCard
 								thumbnail='/images/thumbnail-placeholder.png'
-								id='1'
-								title='Project Name'
+								id='nucleus-pomodoro'
+								title='Nucleus Pomodoro'
+								web='https://www.nucleuspomodoro.com/'
+								git='https://github.com/MrRicram/nucleus-pomodoro'
 							>
-								Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit. Ut et massa mi.
+								A Pomodoro app offers its users project management
+								capabilities and full customisation of the timer
+								settings.
 							</VerticalCard>
 						</Section>
 						<Section>

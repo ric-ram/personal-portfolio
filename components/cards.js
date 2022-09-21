@@ -31,7 +31,7 @@ export const LeftThumbnailCard = ({
 			borderRadius='10px'
 			backgroundColor={useColorModeValue('dayNav', 'nightNav')}
 		>
-			<NextLink href={`/projects/${id}`} passHref scroll={false}>
+			<NextLink href={`/portfolio/${id}`} passHref scroll={false}>
 				<LinkBox cursor='pointer'>
 					<Grid
 						templateColumns='repeat(6, 1fr)'
@@ -54,7 +54,7 @@ export const LeftThumbnailCard = ({
 							rowStart={1}
 							mr={7}
 						>
-							<LinkOverlay href={`/projects/${id}`} target='_blank'>
+							<LinkOverlay href={`/portfolio/${id}`} target='_blank'>
 								<Heading as='h4' variant='project-title' mb={2}>
 									{title}
 								</Heading>
@@ -81,7 +81,7 @@ export const RightThumbnailCard = ({
 			borderRadius='10px'
 			backgroundColor={useColorModeValue('dayNav', 'nightNav')}
 		>
-			<NextLink href={`/projects/${id}`} passHref scroll={false}>
+			<NextLink href={`/portfolio/${id}`} passHref scroll={false}>
 				<LinkBox cursor='pointer'>
 					<Grid
 						templateColumns='repeat(6, 1fr)'
@@ -104,7 +104,7 @@ export const RightThumbnailCard = ({
 							rowStart={1}
 							ml={7}
 						>
-							<LinkOverlay href={`/projects/${id}`} target='_blank'>
+							<LinkOverlay href={`/portfolio/${id}`} target='_blank'>
 								<Heading as='h4' variant='project-title' mb={2}>
 									{title}
 								</Heading>
@@ -161,10 +161,17 @@ export const TechCard = ({ children }) => (
 	</Box>
 )
 
-export const VerticalCard = ({ children, id, title, thumbnail }) => {
+export const VerticalCard = ({
+	children,
+	id,
+	title,
+	thumbnail,
+	web,
+	git
+}) => {
 	return (
 		<Box w='100%' mb={4} borderRadius='10px' textAlign='center'>
-			<NextLink href={`/projects/${id}`} passHref scroll={false}>
+			<NextLink href={`/portfolio/${id}`} passHref scroll={false}>
 				<LinkBox cursor='pointer'>
 					<Image
 						src={thumbnail}
@@ -175,7 +182,7 @@ export const VerticalCard = ({ children, id, title, thumbnail }) => {
 						mb={3}
 					/>
 					<LinkOverlay
-						href={`/projects/${id}`}
+						href={`/portfolio/${id}`}
 						target='_blank'
 						mb={3}
 					>
@@ -184,7 +191,7 @@ export const VerticalCard = ({ children, id, title, thumbnail }) => {
 						</Heading>
 					</LinkOverlay>
 					<Text fontSize={{ md: 16, sm: 14 }}>{children}</Text>
-					<LinksGrid hrefWeb='' hrefGit='' />
+					<LinksGrid hrefWeb={web} hrefGit={git} />
 				</LinkBox>
 			</NextLink>
 		</Box>

@@ -81,12 +81,17 @@ const Page = () => {
 				</Heading>
 				<LeftThumbnailCard
 					thumbnail='/images/thumbnail-placeholder.png'
-					id='1'
-					title='Project Name'
+					id='nucleus-pomodoro'
+					title='Nucleus Pomodoro'
 				>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-					et massa mi. Aliquam in hendrerit urna.{' '}
-					<NextLink href='/projects/1' passHref scroll={false}>
+					A Pomodoro app offers its users project management
+					capabilities, such as project creation and task creation,
+					and full customisation of the timer settings.{' '}
+					<NextLink
+						href='/portfolio/template'
+						passHref
+						scroll={false}
+					>
 						<Link>
 							Read more <ArrowForwardIcon />
 						</Link>
