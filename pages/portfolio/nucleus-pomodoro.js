@@ -28,7 +28,7 @@ const Project = () => (
 				alt='placeholder'
 			/>
 			<P>
-				A Pomodoro app offers its users project management
+				A Pomodoro app that offers its users project management
 				capabilities, such as project creation and task creation, and
 				full customisation of the timer settings.
 			</P>
@@ -75,10 +75,11 @@ const Project = () => (
 					<Link href='https://nesto.cc' isExternal>
 						nesto.cc
 					</Link>
-					, which I enjoyed using. However, most features were or
-					still are in development or paid for. So, I took it as
-					inspiration and developed my own Pomodoro app with the
-					features I wanted.{' '}
+					, which I often used. However, most features were or still
+					are in development or offered only to paid users. So, I took
+					it as inspiration and developed my own Pomodoro app with the
+					features I believed would increase my productivity and that
+					of others.{' '}
 				</P>
 				<P>
 					I started with the design of the app. I chose a simple
@@ -125,7 +126,7 @@ const Project = () => (
 					In the backend, I used NodeJs and ExpressJS, as I already
 					had some experience using them. There were fewer challenges.
 					However, I still struggled to return all items after the
-					home page was loaded for the first time after the user
+					home page finished loading for the first time after the user
 					login. After I studied and researched more about promises, I
 					managed to solve this issue and get the results I wanted.
 				</P>{' '}

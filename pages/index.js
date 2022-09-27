@@ -20,6 +20,7 @@ import { MainButton, SocialButton } from '../components/button'
 import ContactForm from '../components/form'
 import NextLink from 'next/link'
 import Paragraph from '../components/paragraph'
+import Portfolio from './portfolio'
 import Section from '../components/section'
 
 const Page = () => {
@@ -84,7 +85,7 @@ const Page = () => {
 					id='nucleus-pomodoro'
 					title='Nucleus Pomodoro'
 				>
-					A Pomodoro app offers its users project management
+					A Pomodoro app that offers its users project management
 					capabilities, such as project creation and task creation,
 					and full customisation of the timer settings.{' '}
 					<NextLink
@@ -99,12 +100,16 @@ const Page = () => {
 				</LeftThumbnailCard>
 				<RightThumbnailCard
 					thumbnail='/images/thumbnail-placeholder.png'
-					id='1'
-					title='Project Name'
+					id='personal-portfolio'
+					title='Personal Portfolio'
 				>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
 					et massa mi. Aliquam in hendrerit urna.{' '}
-					<NextLink href='/projects/1' passHref scroll={false}>
+					<NextLink
+						href='/portfolio/personal-portfolio'
+						passHref
+						scroll={false}
+					>
 						<Link>
 							Read more <ArrowForwardIcon />
 						</Link>

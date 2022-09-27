@@ -20,7 +20,7 @@ const Portfolio = () => {
 								web='https://www.nucleuspomodoro.com/'
 								git='https://github.com/MrRicram/nucleus-pomodoro'
 							>
-								A Pomodoro app offers its users project management
+								A Pomodoro app that offers its users project management
 								capabilities and full customisation of the timer
 								settings.
 							</VerticalCard>
