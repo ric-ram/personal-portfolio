@@ -20,7 +20,6 @@ import { MainButton, SocialButton } from '../components/button'
 import ContactForm from '../components/form'
 import NextLink from 'next/link'
 import Paragraph from '../components/paragraph'
-import Portfolio from './portfolio'
 import Section from '../components/section'
 
 const Page = () => {

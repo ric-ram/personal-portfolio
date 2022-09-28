@@ -111,11 +111,12 @@ const Resume = () => {
 					Tech Stack
 				</Heading>
 				<Box display='flex' flexWrap='wrap' gap={4} fontSize='0.9em'>
-					<TechCard>JavaScript, HTML, CSS, Dart, Terraform</TechCard>
+					<TechCard>JavaScript, HTML/CSS, Dart</TechCard>
 					<TechCard>Python, Java, C/C++, C#, BPEL</TechCard>
 					<TechCard>NodeJs, ReactJs, ExpressJS, Flutter</TechCard>
 					<TechCard>Oracle, PostgreSQL, MySQL</TechCard>
-					<TechCard>Git, Figma, Azure VM&apos;s, Firebase</TechCard>
+					<TechCard>Git, Figma, Azure VM, Firebase</TechCard>
+					<TechCard>OTRS, OTOBO, JDeveloper</TechCard>
 				</Box>
 			</Section>
 
@@ -125,57 +126,33 @@ const Resume = () => {
 				</Heading>
 				<WorkHistory title='🚧 BUSINESS AND INTEGRATION ARCHITECT ANALYST | ACCENTURE'>
 					<WorkP>August 2022 - Present</WorkP>
-					<WorkP>
-						Consultant and developer in an international project for
-						telco clients.
-					</WorkP>
 					<UnorderedList paddingX={4} mb={3}>
 						<ListItem lineHeight='1.9em'>
-							Responsible for the implementation of a new ticket
-							system, OTOBO, its configuration and migration from the
-							old system (OTRS)
+							Implemented a new ticket system, OTOBO, to solve the
+							absence of OAuth 2.0 from the old one, OTRS, configuring
+							a new environment using Azure VMs and migrating more
+							than 20Gb of data.
 						</ListItem>
 					</UnorderedList>
 				</WorkHistory>
 				<WorkHistory title='🚧 APPLICATION DEVELOPMENT ASSOCIATE | ACCENTURE'>
 					<WorkP>April 2021 - July 2022</WorkP>
-					<WorkP>
-						Consultant and developer in an international project for
-						telco clients.
-					</WorkP>
-					<WorkP>
-						Maintenance of BSS systems using Oracle tools, namely
-						Application Integration Architecture (AIA), deployed
-						together with Oracle&apos;s CRM and Oracle Billing and
-						Revenue Management.
-					</WorkP>
 					<UnorderedList paddingX={4} mb={3}>
 						<ListItem lineHeight='1.9em'>
-							Solve problems of communication between both CRM and
-							BRM.
+							Collaborated with 2-3 teams to perform continuous
+							maintenance of BSS System using Oracle tools, namely
+							Application Integration Architecture (AIA), deployed
+							with Oracle&apos;s CRM and BRM.
 						</ListItem>
 						<ListItem lineHeight='1.9em'>
-							Develop housekeeping scripts for SQL Databases
+							Developed and tested an API in collaboration with 2
+							teams of engineers responsible for creating and managing
+							electronic payslips for a telecommunications company.
 						</ListItem>
 						<ListItem lineHeight='1.9em'>
-							Update existing API&apos;s in order to solve occurring
-							problems.
-						</ListItem>
-					</UnorderedList>
-					<WorkP>
-						Development and testing of new API&apos;s for different
-						business requirements using BPEL and Oracle JDeveloper (10
-						& 11).
-					</WorkP>
-					<UnorderedList paddingX={4} mb={3}>
-						<ListItem lineHeight='1.9em'>
-							Develop an API responsible for the creation of the
-							different types of electronic payslips (e-factura) for a
-							telecommunication company.
-						</ListItem>
-						<ListItem lineHeight='1.9em'>
-							Develop an API to send pre-paid customers information to
-							the government database to help fight terrorism.
+							Contributed to developing an API to register information
+							of pre-paid telephone customers in a government database
+							in an initiative to help fight terrorism.
 						</ListItem>
 					</UnorderedList>
 				</WorkHistory>
@@ -185,8 +162,11 @@ const Resume = () => {
 				<Heading as='h3' variant='section-title'>
 					Projects & Accomplishments
 				</Heading>
-				<ProjectList id='pomodoro'>
+				<ProjectList id='nucleus-pomodoro' withLine={true}>
 					Built a pomodoro app with project management functionalities
+				</ProjectList>
+				<ProjectList id='personal-portfolio' withLine={false}>
+					Built a minimalist online personal portfolio
 				</ProjectList>
 			</Section>
 
@@ -196,19 +176,14 @@ const Resume = () => {
 				</Heading>
 				<WorkHistory title='🤝🏽 VOLUNTEER | BANCO DO BEBÉ'>
 					<WorkP>August 2022</WorkP>
-					<WorkP>
-						Helped raising necessary baby related goods to help the
-						families supported by this organization.
-					</WorkP>
 					<UnorderedList paddingX={4} mb={3}>
 						<ListItem lineHeight='1.9em'>
-							Distribute flyers in front of a supermarket to raise
-							awareness of the campaign needs and of the organization
-							mission.
-						</ListItem>
-						<ListItem lineHeight='1.9em'>
-							Helped carry the collected goods and store them in the
-							designated warehouse.
+							Helped raise more than 1600 goods, including diapers,
+							baby food and baby bottles, to help supported families
+							provide for their babies by distributing flyers at a
+							supermarket to raise awareness of the campaign and the
+							association&apos;s mission and helping carry the
+							collected goods to the designated storage facility.
 						</ListItem>
 					</UnorderedList>
 				</WorkHistory>
