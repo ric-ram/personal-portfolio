@@ -97,7 +97,7 @@ const Resume = () => {
 						</Box>
 						<DownloadButton
 							icon={<DownloadIcon />}
-							href=''
+							href='/Ricardo_Ramos_Resume_2022.pdf'
 							size={{ sm: 'sm', md: 'md' }}
 						>
 							Download Resume

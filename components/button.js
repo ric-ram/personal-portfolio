@@ -10,7 +10,7 @@ import NextLink from 'next/link'
 
 const MainButton = ({ children, icon, href, align }) => (
 	<Box align={align} my={4}>
-		<NextLink href={href} passHref scroll={false}>
+		<NextLink href={href} passHref>
 			<Button
 				rightIcon={icon}
 				colorScheme={useColorModeValue('dayBlue', 'nightPink')}
@@ -24,15 +24,18 @@ const MainButton = ({ children, icon, href, align }) => (
 
 const DownloadButton = ({ children, icon, href, size }) => (
 	<Box align='right'>
-		<NextLink href={href} passHref scroll={false}>
-			<Button
-				rightIcon={icon}
-				colorScheme={useColorModeValue('dayBlue', 'nightPink')}
-				color={useColorModeValue('dayBG', 'nightBG')}
-				size={size}
-			>
-				{children}
-			</Button>
+		<NextLink href={href} passHref>
+			<a target='_blank'>
+				<Button
+					rightIcon={icon}
+					colorScheme={useColorModeValue('dayBlue', 'nightPink')}
+					color={useColorModeValue('dayBG', 'nightBG')}
+					size={size}
+					target='_blank'
+				>
+					{children}
+				</Button>
+			</a>
 		</NextLink>
 	</Box>
 )

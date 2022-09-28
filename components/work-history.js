@@ -38,7 +38,7 @@ const WorkHistory = ({ children, title }) => (
 const ProjectList = ({ children, id, withLine }) => (
 	<Box>
 		{withLine ? <Line /> : ''}
-		<NextLink href={`/portfolio/${id}`} passHref scroll={false}>
+		<NextLink href={`/portfolio/${id}`} passHref>
 			<Link variant='project-link'>🏆 {children}</Link>
 		</NextLink>
 	</Box>
