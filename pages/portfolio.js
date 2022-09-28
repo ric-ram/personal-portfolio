@@ -20,49 +20,20 @@ const Portfolio = () => {
 								web='https://www.nucleuspomodoro.com/'
 								git='https://github.com/MrRicram/nucleus-pomodoro'
 							>
-								A Pomodoro app that offers its users project management
-								capabilities and full customisation of the timer
-								settings.
+								A Pomodoro app that offers its users project
+								management capabilities and full customisation of the
+								timer settings.
 							</VerticalCard>
 						</Section>
 						<Section>
 							<VerticalCard
 								thumbnail='/images/thumbnail-placeholder.png'
-								id='1'
-								title='Project Name'
+								id='personal-portfolio'
+								title='Personal Portfolio'
 							>
-								Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit. Ut et massa mi.
-							</VerticalCard>
-						</Section>
-						<Section>
-							<VerticalCard
-								thumbnail='/images/thumbnail-placeholder.png'
-								id='1'
-								title='Project Name'
-							>
-								Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit. Ut et massa mi.
-							</VerticalCard>
-						</Section>
-						<Section>
-							<VerticalCard
-								thumbnail='/images/thumbnail-placeholder.png'
-								id='1'
-								title='Project Name'
-							>
-								Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit. Ut et massa mi.
-							</VerticalCard>
-						</Section>
-						<Section>
-							<VerticalCard
-								thumbnail='/images/thumbnail-placeholder.png'
-								id='1'
-								title='Project Name'
-							>
-								Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit. Ut et massa mi.
+								A simple and clean personal portfolio developed to
+								share my journey as a developer and my professional
+								background.
 							</VerticalCard>
 						</Section>
 					</SimpleGrid>

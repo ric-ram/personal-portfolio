@@ -18,7 +18,7 @@ import P from '../../components/paragraph'
 import Section from '../../components/section'
 
 const Project = () => (
-	<Layout title='template'>
+	<Layout title='Nucleus Pomodoro'>
 		<Container mt={4}>
 			<Title>
 				Nucleus Pomodoro <Badge>2022</Badge>
@@ -88,10 +88,13 @@ const Project = () => (
 					around the digital clock to give it another visual effect.
 				</P>{' '}
 				<P>
-					Since it was my second time using Figma, I had many
-					challenges, especially when designing the menus and their
-					behaviours, as well as how to prototype my designs and make
-					them closest to my idea.
+					Since it was my second time using{' '}
+					<Link href='https://www.figma.com/' isExternal>
+						Figma
+					</Link>
+					, I had many challenges, especially when designing the menus
+					and their behaviours, as well as how to prototype my designs
+					and make them closest to my idea.
 				</P>
 				<ProjectImage
 					src='https://via.placeholder.com/1920x1080.png?text=Placeholder+2'
@@ -105,10 +108,10 @@ const Project = () => (
 					Development
 				</Heading>
 				<P>
-					I chose ReactJS for my frontend as I&apos;ve been learning
+					I chose ReactJs for my frontend as I&apos;ve been learning
 					it for a few months now and wanted to challenge myself by
 					developing a reasonable-size project from scratch.
-				</P>{' '}
+				</P>
 				<P>
 					One of the challenges I faced was creating the circular
 					progress bar. Thankfully, I came across a video on YouTube
@@ -133,11 +136,15 @@ const Project = () => (
 				<P>
 					I thought about developing the authentication process
 					myself, but during my research, for this project, I came
-					across Auth0. So, out of curiosity and since many big
-					companies use it, I decided to use it. I saw it as an
-					opportunity to learn another tool used in the industry and,
-					at the same time, challenge myself by trying to implement
-					something I&apos;ve never seen before this very project.
+					across{' '}
+					<Link href='https://auth0.com/' isExternal>
+						Auth0
+					</Link>
+					. So, out of curiosity and since many big companies use it,
+					I decided to use it. I saw it as an opportunity to learn
+					another tool used in the industry and, at the same time,
+					challenge myself by trying to implement something I&apos;ve
+					never seen before this very project.
 				</P>
 				<ProjectImage
 					src='https://via.placeholder.com/1920x1080.png?text=Placeholder+3'

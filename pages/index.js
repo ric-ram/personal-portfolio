@@ -87,7 +87,7 @@ const Page = () => {
 				>
 					A Pomodoro app that offers its users project management
 					capabilities, such as project creation and task creation,
-					and full customisation of the timer settings.{' '}
+					and full customisation of the timer settings. <br></br>
 					<NextLink
 						href='/portfolio/template'
 						passHref
@@ -103,8 +103,9 @@ const Page = () => {
 					id='personal-portfolio'
 					title='Personal Portfolio'
 				>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-					et massa mi. Aliquam in hendrerit urna.{' '}
+					A simple and clean personal portfolio developed to share my
+					journey as a developer and my professional background.
+					<br></br>
 					<NextLink
 						href='/portfolio/personal-portfolio'
 						passHref
@@ -115,7 +116,7 @@ const Page = () => {
 						</Link>
 					</NextLink>
 				</RightThumbnailCard>
-				<LeftThumbnailCard
+				{/* <LeftThumbnailCard
 					thumbnail='/images/thumbnail-placeholder.png'
 					id='1'
 					title='Project Name'
@@ -127,7 +128,7 @@ const Page = () => {
 							Read more <ArrowForwardIcon />
 						</Link>
 					</NextLink>
-				</LeftThumbnailCard>
+				</LeftThumbnailCard> */}
 				<MainButton
 					icon={<ChevronRightIcon />}
 					href='/portfolio'
