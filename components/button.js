@@ -8,17 +8,37 @@ import {
 
 import NextLink from 'next/link'
 
-const MainButton = ({ children, icon, href, align }) => (
+const MainButton = ({
+	children,
+	icon,
+	href,
+	align,
+	type = 'button'
+}) => (
 	<Box align={align} my={4}>
 		<NextLink href={href} passHref>
 			<Button
 				rightIcon={icon}
 				colorScheme={useColorModeValue('dayBlue', 'nightPink')}
 				color={useColorModeValue('dayBG', 'nightBG')}
+				type={type}
 			>
 				{children}
 			</Button>
 		</NextLink>
+	</Box>
+)
+
+const SubmitButton = ({ children, icon, align }) => (
+	<Box align={align} my={4}>
+		<Button
+			rightIcon={icon}
+			colorScheme={useColorModeValue('dayBlue', 'nightPink')}
+			color={useColorModeValue('dayBG', 'nightBG')}
+			type='submit'
+		>
+			{children}
+		</Button>
 	</Box>
 )
 
@@ -57,5 +77,6 @@ const SocialButton = ({ label, icon, href }) => (
 module.exports = {
 	MainButton: MainButton,
 	SocialButton: SocialButton,
-	DownloadButton: DownloadButton
+	DownloadButton: DownloadButton,
+	SubmitButton: SubmitButton
 }
