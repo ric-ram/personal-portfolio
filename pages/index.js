@@ -59,12 +59,18 @@ const Page = () => {
 					About
 				</Heading>
 				<Paragraph>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-					et massa mi. Aliquam in hendrerit urna. Pellentesque sit
-					amet sapien fringilla, mattis ligula consectetur, ultrices
-					mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet
-					augue. Vestibulum auctor ornare leo, non suscipit magna
-					interdum eu.{' '}
+					I&apos;m an Electrical Engineer on paper. However, my
+					passion is in building modern solutions to real-life
+					problems using code. When not online, I can be found working
+					towards improving myself, be it behind a book in search of
+					new knowledge or engaged in some sporting activity pushing
+					my limits. Currently, I&apos;m working at{' '}
+					<Link href='https://www.accenture.com/pt-pt' isExternal>
+						Accenture Portugal
+					</Link>{' '}
+					while taking advantage of my free time to improve my skills
+					by enrolling in various courses and working on personal
+					projects.{' '}
 				</Paragraph>
 				<MainButton
 					icon={<ChevronRightIcon />}
