@@ -58,7 +58,7 @@ const Resume = () => {
 							</NextLink>
 							.
 						</p>
-						<p>📧 rf.ramos95@gmail.com</p>
+						<p>📧 r.ramos@ricardoframos.com</p>
 					</Box>
 				</GridItem>
 				<GridItem
