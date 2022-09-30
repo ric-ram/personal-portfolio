@@ -8,20 +8,13 @@ import {
 
 import NextLink from 'next/link'
 
-const MainButton = ({
-	children,
-	icon,
-	href,
-	align,
-	type = 'button'
-}) => (
+const MainButton = ({ children, icon, href, align }) => (
 	<Box align={align} my={4}>
 		<NextLink href={href} passHref>
 			<Button
 				rightIcon={icon}
 				colorScheme={useColorModeValue('dayBlue', 'nightPink')}
 				color={useColorModeValue('dayBG', 'nightBG')}
-				type={type}
 			>
 				{children}
 			</Button>
@@ -36,6 +29,18 @@ const SubmitButton = ({ children, icon, align }) => (
 			colorScheme={useColorModeValue('dayBlue', 'nightPink')}
 			color={useColorModeValue('dayBG', 'nightBG')}
 			type='submit'
+		>
+			{children}
+		</Button>
+	</Box>
+)
+
+const ModalButton = ({ children, align, onClick }) => (
+	<Box align={align} my={4}>
+		<Button
+			colorScheme={useColorModeValue('dayBlue', 'nightPink')}
+			color={useColorModeValue('dayBG', 'nightBG')}
+			onClick={onClick}
 		>
 			{children}
 		</Button>
@@ -78,5 +83,6 @@ module.exports = {
 	MainButton: MainButton,
 	SocialButton: SocialButton,
 	DownloadButton: DownloadButton,
-	SubmitButton: SubmitButton
+	SubmitButton: SubmitButton,
+	ModalButton: ModalButton
 }
