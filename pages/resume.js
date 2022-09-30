@@ -74,11 +74,16 @@ const Resume = () => {
 				>
 					<Box
 						display='flex'
-						alignItems='center'
+						alignItems={{ sm: 'center', base: 'flex-start' }}
 						justifyContent='space-between'
+						flexDirection={{ sm: 'row', base: 'column' }}
 						gap={3}
 					>
-						<Box mt={2} display='flex' gap={{ sm: 3, md: 4, lg: 5 }}>
+						<Box
+							mt={2}
+							display='flex'
+							gap={{ sm: 3, md: 4, lg: 5, base: 2 }}
+						>
 							<SocialButton
 								icon={<IoLogoGithub size={24} />}
 								label='Github'

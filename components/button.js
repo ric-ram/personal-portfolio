@@ -15,6 +15,7 @@ const MainButton = ({ children, icon, href, align }) => (
 				rightIcon={icon}
 				colorScheme={useColorModeValue('dayBlue', 'nightPink')}
 				color={useColorModeValue('dayBG', 'nightBG')}
+				fontSize={{ sm: 16, base: 14 }}
 			>
 				{children}
 			</Button>
@@ -29,6 +30,7 @@ const SubmitButton = ({ children, icon, align }) => (
 			colorScheme={useColorModeValue('dayBlue', 'nightPink')}
 			color={useColorModeValue('dayBG', 'nightBG')}
 			type='submit'
+			fontSize={{ sm: 16, base: 14 }}
 		>
 			{children}
 		</Button>
@@ -41,6 +43,7 @@ const ModalButton = ({ children, align, onClick }) => (
 			colorScheme={useColorModeValue('dayBlue', 'nightPink')}
 			color={useColorModeValue('dayBG', 'nightBG')}
 			onClick={onClick}
+			fontSize={{ sm: 16, base: 14 }}
 		>
 			{children}
 		</Button>
@@ -57,6 +60,8 @@ const DownloadButton = ({ children, icon, href, size }) => (
 					color={useColorModeValue('dayBG', 'nightBG')}
 					size={size}
 					target='_blank'
+					fontSize={{ sm: 16, base: 14 }}
+					padding={{ sm: 3, base: 1 }}
 				>
 					{children}
 				</Button>

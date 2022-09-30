@@ -38,13 +38,14 @@ export const LeftThumbnailCard = ({
 						alignItems='center'
 						gap={4}
 					>
-						<GridItem colStart={1} colEnd={3}>
+						<GridItem colStart={1} colEnd={3} w='100%' h='100%'>
 							<Image
 								src={thumbnail}
 								alt={title}
 								loading='lazy'
 								borderLeftRadius='10px'
 								w='100%'
+								objectFit='cover'
 							/>
 						</GridItem>
 						<GridItem
@@ -52,14 +53,18 @@ export const LeftThumbnailCard = ({
 							colEnd={7}
 							rowSpan={1}
 							rowStart={1}
-							mr={7}
+							mr={{ md: 7, base: 4 }}
+							mt={2}
+							mb={2}
 						>
 							<LinkOverlay href={`/portfolio/${id}`} target='_blank'>
 								<Heading as='h4' variant='project-title' mb={2}>
 									{title}
 								</Heading>
 							</LinkOverlay>
-							<Text fontSize={{ md: 16, sm: 14 }}>{children}</Text>
+							<Text fontSize={{ md: 16, sm: 14, base: 12 }}>
+								{children}
+							</Text>
 						</GridItem>
 					</Grid>
 				</LinkBox>
@@ -88,13 +93,14 @@ export const RightThumbnailCard = ({
 						alignItems='center'
 						gap={4}
 					>
-						<GridItem colStart={5} colEnd={7}>
+						<GridItem colStart={5} colEnd={7} w='100%' h='100%'>
 							<Image
 								src={thumbnail}
 								alt={title}
 								loading='lazy'
 								borderRightRadius='10px'
 								w='100%'
+								objectFit='cover'
 							/>
 						</GridItem>
 						<GridItem
@@ -102,14 +108,18 @@ export const RightThumbnailCard = ({
 							colEnd={5}
 							rowSpan={1}
 							rowStart={1}
-							ml={7}
+							ml={{ md: 7, base: 4 }}
+							mt={2}
+							mb={2}
 						>
 							<LinkOverlay href={`/portfolio/${id}`} target='_blank'>
 								<Heading as='h4' variant='project-title' mb={2}>
 									{title}
 								</Heading>
 							</LinkOverlay>
-							<Text fontSize={{ md: 16, sm: 14 }}>{children}</Text>
+							<Text fontSize={{ md: 16, sm: 14, base: 12 }}>
+								{children}
+							</Text>
 						</GridItem>
 					</Grid>
 				</LinkBox>
@@ -153,7 +163,7 @@ export const TechCard = ({ children }) => (
 			'1px solid #a9b3d5'
 		)}
 		borderRadius='5px'
-		padding={{ md: '0.5em 1em', sm: '0.2em 0.5em' }}
+		padding={{ sm: '0.4em 0.8em', base: '0.2em 0.5em' }}
 		alignItems='center'
 		fontSize='0.9em'
 	>

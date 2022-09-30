@@ -35,7 +35,7 @@ const Page = () => {
 					<Heading as='h2' variant='page-title'>
 						Ricardo Ramos
 					</Heading>
-					<p>
+					<p fontSize={{ sm: 16, base: 14 }}>
 						Software Engineer / Business and Integration Architect
 						Analyst
 					</p>
