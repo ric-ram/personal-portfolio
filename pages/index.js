@@ -6,11 +6,7 @@ import {
 	Image,
 	Link
 } from '@chakra-ui/react'
-import {
-	IoLogoGithub,
-	IoLogoInstagram,
-	IoLogoLinkedin
-} from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import {
 	LeftThumbnailCard,
 	RightThumbnailCard
@@ -151,18 +147,18 @@ const Page = () => {
 					<SocialButton
 						icon={<IoLogoGithub size={24} />}
 						label='Github'
-						href=''
+						href='https://github.com/ric-ram'
 					/>
 					<SocialButton
 						icon={<IoLogoLinkedin size={24} />}
 						label='LinkedIn'
-						href=''
+						href='https://www.linkedin.com/in/rfframos/'
 					/>
-					<SocialButton
+					{/* <SocialButton
 						icon={<IoLogoInstagram size={24} />}
 						label='Instagram'
 						href=''
-					/>
+					/> */}
 				</Box>
 				<ContactForm />
 			</Section>

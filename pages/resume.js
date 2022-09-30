@@ -10,11 +10,7 @@ import {
 	UnorderedList
 } from '@chakra-ui/react'
 import { DownloadButton, SocialButton } from '../components/button'
-import {
-	IoLogoGithub,
-	IoLogoInstagram,
-	IoLogoLinkedin
-} from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { ProjectList, WorkHistory } from '../components/work-history'
 
 import { DownloadIcon } from '@chakra-ui/icons'
@@ -87,18 +83,18 @@ const Resume = () => {
 							<SocialButton
 								icon={<IoLogoGithub size={24} />}
 								label='Github'
-								href=''
+								href='https://github.com/ric-ram'
 							/>
 							<SocialButton
 								icon={<IoLogoLinkedin size={24} />}
 								label='LinkedIn'
-								href=''
+								href='https://www.linkedin.com/in/rfframos/'
 							/>
-							<SocialButton
+							{/* <SocialButton
 								icon={<IoLogoInstagram size={24} />}
 								label='Instagram'
 								href=''
-							/>
+							/> */}
 						</Box>
 						<DownloadButton
 							icon={<DownloadIcon />}
