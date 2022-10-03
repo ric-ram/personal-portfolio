@@ -203,9 +203,9 @@ export const VerticalCard = ({
 						</Heading>
 					</LinkOverlay>
 					<Text fontSize={{ md: 16, sm: 14 }}>{children}</Text>
-					<LinksGrid hrefWeb={web} hrefGit={git} />
 				</LinkBox>
 			</NextLink>
+			<LinksGrid hrefWeb={web} hrefGit={git} />
 		</Box>
 	)
 }
