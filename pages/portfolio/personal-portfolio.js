@@ -45,17 +45,17 @@ const Project = () => (
 				</ListItem>
 				<ListItem>
 					<Meta>Website</Meta>
-					<Link href='https://www.nucleuspomodoro.com/' isExternal>
-						nucleuspomodoro.com/ <ExternalLinkIcon mx='2px' />
+					<Link href='https://www.ricardoframos.com/' isExternal>
+						ricardoframos.com/ <ExternalLinkIcon mx='2px' />
 					</Link>
 				</ListItem>
 				<ListItem>
 					<Meta>Repo</Meta>
 					<Link
-						href='https://github.com/MrRicram/nucleus-pomodoro'
+						href='https://github.com/ric-ram/personal-portfolio'
 						isExternal
 					>
-						github.com/MrRicram/nucleus-pomodoro{' '}
+						github.com/ric-ram/personal-portfolio{' '}
 						<ExternalLinkIcon mx='2px' />
 					</Link>
 				</ListItem>
