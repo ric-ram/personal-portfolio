@@ -45,6 +45,7 @@ export const LeftThumbnailCard = ({
 								loading='lazy'
 								borderLeftRadius='10px'
 								w='100%'
+								h='100%'
 								objectFit='cover'
 							/>
 						</GridItem>
@@ -100,6 +101,7 @@ export const RightThumbnailCard = ({
 								loading='lazy'
 								borderRightRadius='10px'
 								w='100%'
+								h='100%'
 								objectFit='cover'
 							/>
 						</GridItem>
