@@ -12,6 +12,7 @@
 * [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
+* [License](#license)
 * [Contact](#contact)
 
 ## General info
