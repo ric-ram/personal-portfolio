@@ -1,3 +1,6 @@
+You can create your own website for free without notifying me by forking this project under the following condition:
+ - Attribution: You must give appropriate credit, provide a link to my homepage (https://www.ricardoframos.com/) and to Takuya Matsuyama's website (https://www.craftz.dog/).
+
 MIT License
 
 Copyright (c) 2022 Ricardo Ramos
