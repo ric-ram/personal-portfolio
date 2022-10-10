@@ -20,9 +20,9 @@ This project aims to help me share my professional journey and showcase my proje
 
 ## Technologies
 
-* NextJs
-* ChakraUI
-* Framer Motion
+* NextJs - A React framework with hybrid static & server rendering, route pre-fetching, etc.
+* ChakraUI - A simple, modular and accessible component library for React
+* Framer Motion - An animation library for React
 
 ## Setup
 
@@ -80,8 +80,8 @@ MIT License.
 
 You can create your own Pomodoro app for free without notifying me by forking this project under the following conditions:
 
-* Add a link to my website
-* Add a link to Takuya Matsuyama's website
+* Add a link to my [homepage](https://www.ricardoframos.com/)
+* Add a link to [Takuya Matsuyama's website](https://www.craftz.dog/)
 
 Check out LICENSE for more detail.
 
