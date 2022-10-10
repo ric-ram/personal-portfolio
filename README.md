@@ -1,6 +1,6 @@
 # Project Name
 
-![Example screenshot](./img/screenshot.png)
+![Website Screenshot](./images/screenshot.png)
 
 > A personal website to showcase my Professional journey and my portfolio.
 
@@ -20,9 +20,9 @@ This project aims to help me share my professional journey and showcase my proje
 
 ## Technologies
 
-* NextJs - A React framework with hybrid static & server rendering, route pre-fetching, etc.
-* ChakraUI - A simple, modular and accessible component library for React
-* Framer Motion - An animation library for React
+* [NextJs](https://nextjs.org/) - A React framework with hybrid static & server rendering, route pre-fetching, etc.
+* [ChakraUI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
+* [Framer Motion](https://www.framer.com/motion/) - An animation library for React
 
 ## Setup
 
