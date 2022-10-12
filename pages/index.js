@@ -82,7 +82,7 @@ const Page = () => {
 					Case Studies
 				</Heading>
 				<LeftThumbnailCard
-					thumbnail='/images/thumbnail-placeholder.png'
+					thumbnail='/images/pomodoro-cover.jpg'
 					id='nucleus-pomodoro'
 					title='Nucleus Pomodoro'
 				>

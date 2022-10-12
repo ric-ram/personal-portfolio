@@ -14,11 +14,11 @@ const Portfolio = () => {
 					<SimpleGrid columns={[1, 1, 2]} gap={6} mt={6}>
 						<Section>
 							<VerticalCard
-								thumbnail='/images/thumbnail-placeholder.png'
+								thumbnail='/images/pomodoro-cover.jpg'
 								id='nucleus-pomodoro'
 								title='Nucleus Pomodoro'
 								web='https://www.nucleuspomodoro.com/'
-								git='https://github.com/MrRicram/nucleus-pomodoro'
+								git='https://github.com/ric-ram/nucleus-pomodoro'
 							>
 								A Pomodoro app that offers its users project
 								management capabilities and full customisation of the
@@ -30,6 +30,8 @@ const Portfolio = () => {
 								thumbnail='/images/thumbnail-placeholder.png'
 								id='personal-portfolio'
 								title='Personal Portfolio'
+								web='https://www.ricardoframos.com/'
+								git='https://github.com/ric-ram/personal-portfolio'
 							>
 								A simple and clean personal portfolio developed to
 								share my journey as a developer and my professional
