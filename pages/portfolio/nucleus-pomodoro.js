@@ -24,7 +24,7 @@ const Project = () => (
 				Nucleus Pomodoro <Badge>2022</Badge>
 			</Title>
 			<ProjectImage
-				src='https://via.placeholder.com/1920x1080.png?text=Placeholder+1'
+				src='../images/pomodoro-main.jpg'
 				alt='placeholder'
 			/>
 			<P>
@@ -50,10 +50,10 @@ const Project = () => (
 				<ListItem>
 					<Meta>Repo</Meta>
 					<Link
-						href='https://github.com/MrRicram/nucleus-pomodoro'
+						href='https://github.com/ric-ram/nucleus-pomodoro'
 						isExternal
 					>
-						github.com/MrRicram/nucleus-pomodoro{' '}
+						github.com/ric-ram/nucleus-pomodoro{' '}
 						<ExternalLinkIcon mx='2px' />
 					</Link>
 				</ListItem>
@@ -96,11 +96,11 @@ const Project = () => (
 					and their behaviours, as well as how to prototype my designs
 					and make them closest to my idea.
 				</P>
-				<ProjectImage
+				{/* <ProjectImage
 					src='https://via.placeholder.com/1920x1080.png?text=Placeholder+2'
 					alt='placeholder'
 					mt={3}
-				/>
+				/> */}
 			</Section>
 
 			<Section>
@@ -146,11 +146,11 @@ const Project = () => (
 					challenge myself by trying to implement something I&apos;ve
 					never seen before this very project.
 				</P>
-				<ProjectImage
+				{/* <ProjectImage
 					src='https://via.placeholder.com/1920x1080.png?text=Placeholder+3'
 					alt='placeholder'
 					mt={3}
-				/>
+				/> */}
 			</Section>
 		</Container>
 	</Layout>
